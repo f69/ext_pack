@@ -1,6 +1,6 @@
-import 'package:flutter_test/flutter_test.dart';
 import 'package:ext_pack/src/dart/date_ext.dart';
 import 'package:ext_pack/src/dart/int_ext.dart';
+import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   group('DateExt', () {
@@ -12,6 +12,9 @@ void main() {
 
     test('date property returns zero-time date', () {
       expect(date.date, DateTime(2020, 5, 10));
+    });
+    test('today property returns today`s date', () {
+      expect(date.today, DateTime.now().date);
     });
     test('isoDateString is correct', () {
       expect(date.isoDateString, '2020-05-10');
@@ -29,7 +32,10 @@ void main() {
       expect(date.isSameYear(outOfRange), false);
     });
     test('isBetween', () {
-      expect(date.isBetween(DateTime(2020, 1, 1), DateTime(2020, 12, 31)), true);
+      expect(
+        date.isBetween(DateTime(2020, 1, 1), DateTime(2020, 12, 31)),
+        true,
+      );
       expect(date.isBetween(DateTime(2019, 1, 1), DateTime(2020, 4, 1)), false);
     });
     test('operator + and -', () {
