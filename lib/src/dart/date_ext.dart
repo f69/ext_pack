@@ -10,17 +10,17 @@ extension DateExt on DateTime {
   /// Get string for only date part of [DateTime] (no time) in ISO 8601 format.
   String get isoDateString => toIso8601String().substring(0, 10);
 
-  /// Is given [DateTime] is the same date as other.
+  /// Whether this [DateTime] is the same date as other.
   bool isSameDate(DateTime other) => date == other.date;
 
-  /// Is given [DateTime] is in the same month as other.
+  /// Whether this [DateTime] is in the same month as other.
   bool isSameMonth(DateTime other) =>
       year == other.year && month == other.month;
 
-  /// Is given [DateTime] is in the same year as other.
+  /// Whether this [DateTime] is in the same year as other.
   bool isSameYear(DateTime other) => year == other.year;
 
-  /// Check if given [DateTime] is between two dates.
+  /// Whether this [DateTime] is between two dates.
   bool isBetween(DateTime begin, DateTime end) =>
       !isBefore(begin) && !isAfter(end);
 
@@ -35,9 +35,9 @@ extension DateExt on DateTime {
   /// Subtracts [Duration] from [DateTime].
   DateTime operator -(Duration duration) => subtract(duration);
 
-  /// Is given [DateTime] is today.
+  /// Whether this [DateTime] is today.
   bool get isToday => isSameDate(DateTime.now());
 
-  /// Is given [DateTime] is yesterday.
+  /// Whether this [DateTime] is yesterday.
   bool get isYesterday => (this + 1.days).isToday;
 }
