@@ -12,3 +12,9 @@ extension DurationExt on Duration {
   Future<T> delay<T>([FutureOr<T> Function()? computation]) =>
       Future.delayed(this, computation);
 }
+
+extension DurationUtilExt on Duration? {
+  bool get isZero => this == Duration.zero;
+
+  bool get isZeroOrNull => this == null || this == Duration.zero;
+}
