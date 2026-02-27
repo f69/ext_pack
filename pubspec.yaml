@@ -1,6 +1,6 @@
 name: ext_pack
 description: "Dart/Flutter common extensions pack."
-version: 0.0.3
+version: 0.0.4
 
 environment:
   sdk: ^3.10.0

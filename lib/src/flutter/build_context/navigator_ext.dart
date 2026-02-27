@@ -25,6 +25,9 @@ extension NavigatorExt on BuildContext {
   void popUntil(RoutePredicate predicate) =>
       Navigator.popUntil(this, predicate);
 
+  /// Calls [pop] repeatedly to first route.
+  void popToRoot() => popUntil((route) => route.isFirst);
+
   /// Push the given route onto the navigator that most tightly encloses the
   /// given context.
   Future<T?> push<T>(Route<T> route) => Navigator.push(this, route);
