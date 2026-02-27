@@ -15,6 +15,12 @@ extension NavigatorExt on BuildContext {
   /// given context.
   void pop<T extends Object?>([T? result]) => Navigator.pop(this, result);
 
+  /// Safely pop the top-most route off the navigator that most tightly encloses
+  /// the given context if it is mounted and can pop.
+  void safePop<T extends Object?>([T? result]) {
+    if (mounted && canPop()) pop(result);
+  }
+
   /// Calls [pop] repeatedly until the predicate returns true.
   void popUntil(RoutePredicate predicate) =>
       Navigator.popUntil(this, predicate);
