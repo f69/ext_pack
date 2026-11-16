@@ -1,5 +1,7 @@
 name: ext_pack
 description: "Dart/Flutter common extensions pack."
+homepage: https://github.com/f69/ext_pack
+repository: https://github.com/f69/ext_pack
 version: 0.0.7
 
 environment:
