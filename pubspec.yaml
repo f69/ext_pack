@@ -1,14 +1,18 @@
 name: ext_pack
 description: "Dart/Flutter common extensions pack."
-version: 0.0.7
+homepage: https://github.com/f69/ext_pack
+repository: https://github.com/f69/ext_pack
+version: 1.0.0
 
 environment:
-  sdk: ^3.10.0
-  flutter: ">=1.17.0"
+  sdk: ^3.13.0
+  flutter: ">=3.47.0"
 
 dependencies:
   flutter:
     sdk: flutter
+  material_ui: ^1.11.0
+  cupertino_ui: ^1.1.6
 
 dev_dependencies:
   flutter_test:

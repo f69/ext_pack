@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 extension MessengerExt on BuildContext {
   /// [ScaffoldMessenger] of this context
