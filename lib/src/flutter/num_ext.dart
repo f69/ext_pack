@@ -1,5 +1,6 @@
 import 'package:material_ui/material_ui.dart';
 
+/// Shorthands for gaps
 extension GapExt on num {
   Widget get gap => SizedBox(width: toDouble(), height: toDouble());
 

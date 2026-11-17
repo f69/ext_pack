@@ -1,6 +1,7 @@
 import 'package:cupertino_ui/cupertino_ui.dart';
 import 'package:material_ui/material_ui.dart';
 
+/// Theme-related shorthands for [BuildContext]
 extension ThemeExt on BuildContext {
   /// The data from the closest [Theme] instance that encloses this context.
   ThemeData get theme => Theme.of(this);
@@ -23,6 +24,7 @@ extension ThemeExt on BuildContext {
   ColorScheme get colorScheme => theme.colorScheme;
 }
 
+/// Theme colors-related shorthands for [BuildContext]
 extension ThemeColorsExt on BuildContext {
   /// Primary color of the nearest [Theme]
   Color get primaryColor => theme.primaryColor;
@@ -48,6 +50,7 @@ extension ThemeColorsExt on BuildContext {
   Color? get bodyTextColor => theme.textTheme.bodyMedium?.color;
 }
 
+/// Platform-related shorthands for [BuildContext]
 extension ThemePlatformExt on BuildContext {
   /// [TargetPlatform] from the closest [Theme] instance that encloses this
   /// context.

@@ -13,6 +13,7 @@ extension DurationExt on Duration {
       Future.delayed(this, computation);
 }
 
+/// Null-safe [Duration] properties
 extension DurationUtilExt on Duration? {
   bool get isZero => this == Duration.zero;
 

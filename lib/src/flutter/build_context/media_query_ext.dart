@@ -1,5 +1,6 @@
 import 'package:flutter/widgets.dart';
 
+/// MediaQuery-related shorthands for [BuildContext]
 extension MediaQueryExt on BuildContext {
   /// MediaQuery of this [BuildContext]
   MediaQueryData get mediaQuery => MediaQuery.of(this);

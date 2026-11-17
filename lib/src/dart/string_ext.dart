@@ -1,3 +1,4 @@
+/// Null-safe [String] properties
 extension NullStringExt on String? {
   /// Whether this string is null or empty
   bool get isBlank => this == null || this!.isEmpty;
@@ -6,6 +7,7 @@ extension NullStringExt on String? {
   bool get isNotBlank => !isBlank;
 }
 
+/// [String] utility properties and functions
 extension StringExt on String {
   /// Whether this string represents URL
   bool get isUrl => startsWith('https://') || startsWith('http://');

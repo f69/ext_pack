@@ -1,5 +1,5 @@
 name: ext_pack
-description: "Dart/Flutter common extensions pack."
+description: "Flutter utility extensions pack for base types and BuildContext."
 homepage: https://github.com/f69/ext_pack
 repository: https://github.com/f69/ext_pack
 version: 1.0.0

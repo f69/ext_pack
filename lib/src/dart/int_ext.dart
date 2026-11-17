@@ -16,6 +16,7 @@ extension IntDurationExt on int {
   Duration get ms => Duration(milliseconds: this);
 }
 
+/// Null-safe [int] properties
 extension SafeIntExt on int? {
   int get zeroIfNull => this ?? 0;
 }

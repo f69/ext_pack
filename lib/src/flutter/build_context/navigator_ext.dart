@@ -3,6 +3,7 @@ import 'package:material_ui/material_ui.dart';
 
 import 'theme_ext.dart';
 
+/// Navigator-related shorthands for [BuildContext]
 extension NavigatorExt on BuildContext {
   /// Navigator of this [BuildContext]
   NavigatorState get navigator => Navigator.of(this);

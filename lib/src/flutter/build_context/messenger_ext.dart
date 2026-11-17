@@ -1,5 +1,6 @@
 import 'package:material_ui/material_ui.dart';
 
+/// ScaffoldMessenger-related shorthands for [BuildContext]
 extension MessengerExt on BuildContext {
   /// [ScaffoldMessenger] of this context
   ScaffoldMessengerState? get scaffoldMessenger =>

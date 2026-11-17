@@ -1,5 +1,6 @@
 import 'int_ext.dart';
 
+/// [DateTime] utility properties and functions
 extension DateExt on DateTime {
   /// Get only date part of [DateTime] (zero time).
   DateTime get date => DateTime(year, month, day);
