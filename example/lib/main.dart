@@ -30,7 +30,7 @@ class MyHomePage extends StatelessWidget {
       ),
       body: Center(
         child: Text(
-          '${(DateTime.now() + 3.days).isoDateString}',
+          (DateTime.now() + 3.days).isoDateString,
           style: context.textTheme.headlineMedium,
         ),
       ),

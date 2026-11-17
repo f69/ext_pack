@@ -1,5 +1,6 @@
 name: wxample
 description: "Flutter utility extensions pack for base types and BuildContext usage example."
+publish_to: 'none'
 version: 1.0.0
 
 environment:
