@@ -1,3 +1,6 @@
+## 1.0.1
+* Adds missing API documentation
+
 ## 1.0.0
 * [Breaking] Migration to `material_ui` and `cupertino_ui` packages
 

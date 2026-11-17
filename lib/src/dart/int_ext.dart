@@ -18,5 +18,6 @@ extension IntDurationExt on int {
 
 /// Null-safe [int] properties
 extension SafeIntExt on int? {
+  /// Returns zero if null
   int get zeroIfNull => this ?? 0;
 }

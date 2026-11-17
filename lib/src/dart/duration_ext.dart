@@ -15,7 +15,9 @@ extension DurationExt on Duration {
 
 /// Null-safe [Duration] properties
 extension DurationUtilExt on Duration? {
+  /// Returns true if zero
   bool get isZero => this == Duration.zero;
 
+  /// Returns true if zero or null
   bool get isZeroOrNull => this == null || this == Duration.zero;
 }
