@@ -1,3 +1,6 @@
+## 1.0.2
+* Adds usage example
+
 ## 1.0.1
 * Adds missing API documentation
 

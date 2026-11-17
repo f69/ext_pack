@@ -2,7 +2,7 @@ name: ext_pack
 description: "Flutter utility extensions pack for base types and BuildContext."
 homepage: https://github.com/f69/ext_pack
 repository: https://github.com/f69/ext_pack
-version: 1.0.1
+version: 1.0.2
 
 environment:
   sdk: ^3.13.0
